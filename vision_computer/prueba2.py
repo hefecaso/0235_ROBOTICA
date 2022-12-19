@@ -28,8 +28,7 @@ while True:
         cv2.imshow("Closed",closed)
 
         #4.Encontrar contornos
-        _,cnts,_=cv2.findContours(closed.copy(),
-                          cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
+        _,cnts,_=cv2.findContours(binary,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
         #print "contornos",len(cnts)
 
         total=0
