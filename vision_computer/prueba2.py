@@ -29,8 +29,7 @@ while True:
 
         #4.Encontrar contornos
         
-         _,cnts = cv2.findContours(closed.copy(),
-                          cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
+         _,cnts = cv2.findContours(closed.copy(),cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
         #print "contornos",len(cnts)
 
         total=0
